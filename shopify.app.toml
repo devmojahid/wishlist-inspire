@@ -1,10 +1,33 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "387bc720277232784b68cc0b6d9b7558"
+name = "wishlist-inspire"
+handle = "wishlist-inspire-204"
+application_url = "https://grove-recycling-garden-jesus.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "promotion-and-offer.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
 
+[auth]
+redirect_urls = [
+  "https://grove-recycling-garden-jesus.trycloudflare.com/auth/callback",
+  "https://grove-recycling-garden-jesus.trycloudflare.com/auth/shopify/callback",
+  "https://grove-recycling-garden-jesus.trycloudflare.com/api/auth/callback"
+]
+
 [webhooks]
-api_version = "2024-04"
+api_version = "2024-07"
 
   [[webhooks.subscriptions]]
   topics = [ "app/uninstalled" ]
   uri = "/webhooks"
+
+[pos]
+embedded = false
