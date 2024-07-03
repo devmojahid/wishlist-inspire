@@ -109,7 +109,9 @@ export default function Index() {
 
   return (
     <Page>
-      <TitleBar title="Overview Wishlist Inspire"></TitleBar>
+      <TitleBar title="Overview Wishlist Inspire">
+      </TitleBar>
+    
       <BlockStack gap="500">
         <Layout>
           <Layout.Section>
@@ -117,7 +119,7 @@ export default function Index() {
               <BlockStack gap="500">
                 <BlockStack gap="200">
                   <Text as="h2" variant="headingMd">
-                    Congrats on creating a new Shopify app 🎉
+                    Congrats on creating a new Shopify app 🎉     <Button url="/app/deals">Go to deals</Button>
                   </Text>
                   <Text variant="bodyMd" as="p">
                     This embedded app template uses{" "}

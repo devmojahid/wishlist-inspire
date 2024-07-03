@@ -17,4 +17,16 @@ module.exports = {
   serverModuleFormat: "cjs",
   dev: { port: process.env.HMR_SERVER_PORT || 8002 },
   future: {},
+  routes: async (defineRoutes) => {
+    return defineRoutes((route) => {
+      route("/", "routes/index");
+      route("/app", "routes/app", {
+        children: [
+          route("deals", "routes/app/deals"),
+          route("settings", "routes/app/settings"),
+          // other nested routes...
+        ],
+      });
+    });
+  },
 };
