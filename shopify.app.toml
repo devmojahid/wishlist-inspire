@@ -3,7 +3,7 @@
 client_id = "387bc720277232784b68cc0b6d9b7558"
 name = "wishlist-inspire"
 handle = "wishlist-inspire-204"
-application_url = "https://mechanical-college-nutten-zip.trycloudflare.com"
+application_url = "https://sanyo-extract-gabriel-maple.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://mechanical-college-nutten-zip.trycloudflare.com/auth/callback",
-  "https://mechanical-college-nutten-zip.trycloudflare.com/auth/shopify/callback",
-  "https://mechanical-college-nutten-zip.trycloudflare.com/api/auth/callback"
+  "https://sanyo-extract-gabriel-maple.trycloudflare.com/auth/callback",
+  "https://sanyo-extract-gabriel-maple.trycloudflare.com/auth/shopify/callback",
+  "https://sanyo-extract-gabriel-maple.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
